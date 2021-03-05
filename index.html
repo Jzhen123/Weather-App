@@ -11,40 +11,51 @@
 </head>
 
 <body>
-    <div class="text-center pt-4">
+    <div class="text-center fs-1 pt-4">
         Weather App
     </div>
 
     <div class="text-center p-3">
-        Zip Code Input
+
+        <div class="container-fluid" style="width: 300px;">
+           <form>
+               <div class="formBox">
+                   <input type = "text" id="inputZip" placeholder="Enter Zip Code">
+               </div>
+               <div class="formBox">
+                   <button id="btn" type="button">Get Weather</button>
+               </div>
+           </form>
+        </div>
+
     </div>
-    <div class="card mx-auto m-5 p-2" style="width: 20rem; height: 40rem;">
+    <div class="card mx-auto m-2 p-2" style="width: 20rem; height: 40rem;">
         <div class="row mx-auto">
-            <div class="card p-0 mb-3" style="width: 18rem;">
-                <div class="card-header">
+            <div class="card p-0 mt-2 mb-4" style="width: 18rem;">
+                <div class="card-header text-center">
                     City
                 </div>
                 <div class="row">
-                    <div class="col">
-                        City Placeholder
+                    <div id="city" class="col text-center p-3">
+                       
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row mx-auto">
-            <div class="card p-0 mb-3" style="width: 18rem;">
-                <div class="card-header">
+            <div class="card p-0 mb-4" style="width: 18rem;">
+                <div class="card-header text-center">
                     Temperature
                 </div>
                 <div class="row">
-                    <div class="col border-end">
+                    <div id ="kelvin" class="col border-end text-center p-3">
                         K
                     </div>
-                    <div class="col border-end">
+                    <div id="fahrenheit" class="col border-end text-center p-3">
                         F
                     </div>
-                    <div class="col">
+                    <div id="celcius" class="col text-center p-3">
                         C
                     </div>
                 </div>
@@ -52,30 +63,32 @@
         </div>
 
         <div class="row mx-auto">
-            <div class="card p-0 mb-3" style="width: 18rem;">
-                <div class="card-header">
+            <div class="card p-0 mb-4" style="width: 18rem;">
+                <div class="card-header text-center">
                     Condition
                 </div>
                 <div class="row">
-                    <div class="col">
-                        Condition Placeholder
+                    <div id="condition" class="col text-center p-3">
+                
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row mx-auto">
-            <div class="card p-0 mb-3" style="width: 18rem;">
-                <div class="card-header">
+            <div class="card p-0" style="width: 18rem; height: 15rem;">
+                <div class="card-header text-center">
                     Other Info
                 </div>
                 <div class="row">
-                    <div class="col">
-                        Image
+                    <div class="col text-center p-3">
+                        <img id="pic" src="" alt="">
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="./js/main.js"></script>
 </body>
 
 </html>
