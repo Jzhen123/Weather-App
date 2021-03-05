@@ -1,0 +1,22 @@
+.box1 { 
+position: relative;
+top:30px;
+right:55px;
+}
+
+.box2 {
+    position: relative;
+    top:0px;
+    left:95px;
+}
+
+.button1 {
+    background-color: lightskyblue;
+}
+
+.titleColor {
+    background-color: lightskyblue;
+}
+.appColor {
+    background-color: blanchedalmond;
+}

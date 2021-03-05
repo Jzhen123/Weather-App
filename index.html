@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container-fluid appColor" style="height: 100vh;">
+        <!-- Title -->
+        <div class="text-center fs-1 fw-bold pt-4">
+            <u>Weather App</u>
+        </div>
+        <!-- User Input for Zip Code -->
+        <div class="text-center pb-3">
+
+            <div class="container-fluid" style="width: 300px;">
+                <form>
+                    <div class="formBox box1">
+                        <input type="text" id="inputZip" placeholder="Enter Zip Code">
+                    </div>
+                    <div class="formBox box2">
+                        <button id="btn" class="button1" type="button">Get Weather</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- Card containing 4 subcards of info -->
+        <div class="card mx-auto m-2 p-2 appColor" style="width: 20rem; height: 40rem;">
+            <!-- Card listing Zip Code's City -->
+            <div class="row mx-auto">
+                <div class="card p-0 mt-2 mb-4 border border-secondary " style="width: 18rem;">
+                    <div class="card-header border-secondary text-center titleColor fw-bold">
+                        City
+                    </div>
+                    <div class="row">
+                        <div id="city" class="col text-center p-3">
+                            City
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card listing Zip Code's Current Temperature -->
+            <div class="row mx-auto">
+                <div class="card p-0 mb-4 border border-secondary" style="width: 18rem;">
+                    <div class="card-header text-center titleColor border-secondary fw-bold">
+                        Temperature
+                    </div>
+                    <div class="row">
+                        <div id="kelvin" class="col border-end text-center p-3">
+                            K
+                        </div>
+                        <div id="fahrenheit" class="col border-end text-center p-3">
+                            F
+                        </div>
+                        <div id="celcius" class="col text-center p-3">
+                            C
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Listing Zip Code's Current Weather Condition -->
+            <div class="row mx-auto">
+                <div class="card p-0 mb-4 border border-secondary" style="width: 18rem;">
+                    <div class="card-header text-center titleColor border-secondary fw-bold">
+                        Condition
+                    </div>
+                    <div class="row">
+                        <div id="condition" class="col text-center p-3">
+                            Condition
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Showing a Picture/Icon of Weather Condition -->
+            <div class="row mx-auto">
+                <div class="card p-0 border border-secondary" style="width: 18rem; height: 15rem;">
+                    <div class="card-header text-center titleColor border-secondary fw-bold">
+                        Other Info
+                    </div>
+                    <div class="row">
+                        <div class="col text-center p-3">
+                            <img id="pic" src="" alt="Weather Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
